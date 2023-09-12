@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: stockmanager
+  name: stockmanagerapp
 spec:
   selector:
-    app: stockmanager
+    app: stockmanagerapp
   ports:
   - port: 8030
     protocol: TCP
