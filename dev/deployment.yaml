@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: stockmanagerapp
+  name: stockmanager
 spec:
   selector:
     matchLabels:
-      app: stockmanagerapp
+      app: stockmanager
   replicas: 1
   template:
     metadata:
       labels:
-        app: stockmanagerapp
+        app: stockmanager
     spec:
       containers:
-      - name: stockmanagerapp
+      - name: stockmanager
         image: gerryik/stockmanager:latest
         ports:
         - containerPort: 8030
